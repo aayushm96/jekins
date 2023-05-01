@@ -14,6 +14,7 @@ pipeline {
 			steps {
 				echo "This is stage 2"
 				sh "mvn clean install" 
+				sh "pwd"
 			}
 		}
 	}
