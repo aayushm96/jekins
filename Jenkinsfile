@@ -15,6 +15,7 @@ pipeline {
 				echo "This is stage 2"
 				sh "mvn clean install" 
 				sh "pwd"
+				sh "sudo cp *.war /opt/tomcat/webapps"
 			}
 		}
 	}
