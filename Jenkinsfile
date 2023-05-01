@@ -1,6 +1,7 @@
 pipeline {
-	agent any
+	agent none
 	stages {
+		agent( label = ""){
 		stage ('stage 1') {
 			steps {
 				echo "This is stage 1"
@@ -14,5 +15,6 @@ pipeline {
 				sh "mvn clean install" 
 			}
 		}
+	}
 	}
 }
